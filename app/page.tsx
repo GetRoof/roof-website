@@ -16,7 +16,7 @@ const steps = [
     number: "02",
     title: "We hunt while you sleep",
     description:
-      "Roof scrapes Kamernet, Pararius, Funda and more — continuously, day and night. Never misses a listing.",
+      "Roof scrapes Kamernet, Pararius, Funda and more. Continuously, day and night. Never misses a listing.",
   },
   {
     number: "03",
@@ -37,25 +37,33 @@ export default function Home() {
             alt="Roof"
             width={68}
             height={35}
-            className="h-[22px] w-auto"
+            className="h-[28px] w-auto"
           />
           <a
             href={TESTFLIGHT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-[4px] bg-[#111] px-5 py-2 text-[13px] font-medium text-white transition-colors hover:bg-[#333]"
+            className="transition-opacity hover:opacity-80"
           >
-            Get the app
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/app-store-badge.svg"
+              alt="Download on the App Store"
+              className="h-[34px] w-auto"
+            />
           </a>
         </div>
       </nav>
 
       {/* ─── Hero ─── */}
       <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden">
-        {/* LINE 55: Replace this div with next/image when hero photo is ready */}
-        {/* import heroImage from '@/public/images/hero.jpg' */}
-        {/* <Image src={heroImage} alt="Hero" fill className="object-cover" priority /> */}
-        <div className="absolute inset-0 bg-[#C8C0B4]" />
+        <Image
+          src="/images/hero.png"
+          alt="Two friends celebrating with keys on an Amsterdam canal"
+          fill
+          className="object-cover"
+          priority
+        />
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40" />
@@ -82,21 +90,26 @@ export default function Home() {
             className="mt-6 max-w-[520px] leading-[1.6] text-[#F4F2EE]/75"
             style={{ fontSize: "clamp(16px, 2vw, 20px)" }}
           >
-            Real-time alerts from Kamernet, Pararius, Funda and more. Be first.
-            Apply fast. Get the keys.
+            We stalk Kamernet, Pararius, Funda and more so you
+            don&rsquo;t have to. You sleep. We refresh. You win.
           </p>
 
           <a
             href={TESTFLIGHT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-flex items-center justify-center rounded-[4px] bg-white px-12 py-5 text-[15px] font-medium text-[#111] transition-colors hover:bg-white/90"
+            className="mt-10 transition-opacity hover:opacity-80"
           >
-            Get the app
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/app-store-badge.svg"
+              alt="Download on the App Store"
+              className="h-[48px] w-auto"
+            />
           </a>
 
           <p className="mt-4 text-[13px] text-[#F4F2EE]/50">
-            Free · iOS · The Netherlands
+            Free · The Netherlands
           </p>
         </div>
       </section>
@@ -110,7 +123,7 @@ export default function Home() {
               className="shrink-0 text-[14px] tracking-[0.04em] text-white px-8"
             >
               Monitoring Kamernet · Pararius · Funda · HousingAnywhere ·
-              Kamernet · Pararius · and more — 24/7&nbsp;&nbsp;&nbsp;&nbsp;
+              Kamernet · Pararius · and more · 24/7&nbsp;&nbsp;&nbsp;&nbsp;
             </span>
           ))}
         </div>
@@ -165,13 +178,18 @@ export default function Home() {
             href={TESTFLIGHT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-12 inline-flex items-center justify-center rounded-[4px] bg-white px-12 py-5 text-[15px] font-medium text-[#111] transition-colors hover:bg-white/90"
+            className="mt-12 inline-block transition-opacity hover:opacity-80"
           >
-            Get the app
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/app-store-badge.svg"
+              alt="Download on the App Store"
+              className="h-[48px] w-auto"
+            />
           </a>
 
           <p className="mt-4 text-[13px] text-white/35">
-            Free · iOS · The Netherlands
+            Free · The Netherlands
           </p>
         </div>
       </section>
@@ -185,7 +203,7 @@ export default function Home() {
               alt="Roof"
               width={68}
               height={35}
-              className="h-[18px] w-auto"
+              className="h-[24px] w-auto"
             />
             <p className="mt-1.5 text-[13px] text-[#555]">
               &copy; 2025 Roof. All rights reserved.
