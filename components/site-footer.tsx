@@ -21,6 +21,12 @@ export function SiteFooter() {
         </div>
         <div className="flex gap-6">
           <Link
+            href="/support"
+            className="text-[13px] text-[#555] transition-colors hover:text-white/60"
+          >
+            Support
+          </Link>
+          <Link
             href="/privacy"
             className="text-[13px] text-[#555] transition-colors hover:text-white/60"
           >
