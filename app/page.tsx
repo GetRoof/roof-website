@@ -139,6 +139,7 @@ export default function Home() {
 
       {/* ─── Final CTA ─── */}
       <section
+        data-section="cta"
         className="bg-[#111] text-center"
         style={{ padding: "clamp(100px, 14vw, 160px) 24px" }}
       >
