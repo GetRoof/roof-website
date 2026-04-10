@@ -4,7 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-const TESTFLIGHT_URL = "https://testflight.apple.com/join/uDTMdyvE";
+const APP_STORE_URL = "https://apps.apple.com/us/app/getroof/id6760582452";
 
 const steps = [
   {
@@ -73,7 +73,7 @@ export default function Home() {
           </p>
 
           <a
-            href={TESTFLIGHT_URL}
+            href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-10 transition-opacity hover:opacity-80"
@@ -154,7 +154,7 @@ export default function Home() {
           </h2>
 
           <a
-            href={TESTFLIGHT_URL}
+            href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-12 inline-block transition-opacity hover:opacity-80"

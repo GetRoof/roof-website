@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const TESTFLIGHT_URL = "https://testflight.apple.com/join/uDTMdyvE";
+const APP_STORE_URL = "https://apps.apple.com/us/app/getroof/id6760582452";
 
 export function SiteHeader({ dark = true }: { dark?: boolean }) {
   const [isDark, setIsDark] = useState(dark);
@@ -66,7 +66,7 @@ export function SiteHeader({ dark = true }: { dark?: boolean }) {
           </div>
         </Link>
         <a
-          href={TESTFLIGHT_URL}
+          href={APP_STORE_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="transition-opacity hover:opacity-80"
